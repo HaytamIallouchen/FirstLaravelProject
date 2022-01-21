@@ -1,18 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
+use App\Http\Controllers\planetController;
+use App\Http\Controllers\solarSystemController;
 Route::get('/', function () {
-    return view('welcome');
+    return 'type something in url';
 });
+Route::get('/planets', [PlanetController::class, 'index']);
+Route::get('/planets/{planet}', [PlanetController::class, 'show']);
+Route::get('/solarsystems', [SolarSystemController::class, 'index']);
+Route::get('/solarsystems/{id}', [SolarSystemController::class, 'show']);
