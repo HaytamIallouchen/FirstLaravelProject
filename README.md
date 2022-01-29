@@ -2,12 +2,12 @@
 FirstLaravelProject
 
 Files: <br>
-project/routes : web.php
+/routes : web.php
 
-project/app/Http/Controllers : PlanetController.php & SolarSystemController.php
+/app/Http/Controllers : PlanetController.php & SolarSystemController.php
 
-project/database/migrations : _create_planet_table.php & _create_solarsystem_table.php
+/database/migrations : _create_planet_table.php & _create_solarsystem_table.php
 
-project/app/Models : Planet.php & solarSystem.php
+/app/Models : Planet.php & solarSystem.php
 
-project/resources/views : planets.blade.php & solarsystems.blade.php & solarId.blade.php
+/resources/views : planets.blade.php & solarsystems.blade.php & solarId.blade.php
